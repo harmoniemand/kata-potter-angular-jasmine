@@ -4,6 +4,10 @@
     var myApp = angular.module('myApp', []);
 
     myApp.factory('pricingHelper', function () {
-        return {   };
+        return {
+            calc: function (books) {
+                // your code goes here
+            }
+        };
     });
 })(angular);
