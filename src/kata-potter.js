@@ -26,6 +26,13 @@
                     }
                 });
 
+                if (stacks.length > 1 && _.last(stacks).length == 3 && stacks[stacks.length - 2].length == 5) {
+                     var foo = _.last(stacks[stacks.length - 2]);
+                     _.last(stacks).push(foo);
+
+                    stacks[stacks.length - 2].pop();
+                }
+
                 return this.sumStacks(stacks);
             },
 
